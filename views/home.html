@@ -1,0 +1,46 @@
+<div class="content">
+	<content-dir></content-dir>
+</div>
+
+<div class="best_sellers" style="margin-top:-61px;">
+  <div class="container-fluid">
+    <h4>Need a start? Check out our bestsellers!</h4>
+      <div class="bestsellers">
+        <div ng-repeat="book in bestSearch.items" id="best-item">
+           <a href="#/topsell/{{$index}}">
+                <img ng-src="{{book.volumeInfo.imageLinks['thumbnail']}}" alt="">
+                <h5>{{book.volumeInfo.title}}</h5>
+                <p>{{book.volumeInfo.categories[0]}}</p>
+           </a>
+       </div>
+      </div>
+  </div>
+</div>
+
+<div class="search" style="padding:5px; background: #cc287e;">
+  <form ng-submit= "submit()">
+    <div class="input-group input-group-lg">
+      <input type="text" name="search" class="form-control" style="border-radius: 0;" placeholder="Find author/book/ISBN or any keyword here" ng-model="books" id="search_input">
+      <span class="input-group-btn">
+        <input type="submit" class="form-control btn btn-default" value="Search" style="background: #f7f7f7; color: #000;border:none;border-left:4px solid #cc287e;">
+      </span>
+    </div>
+  </form>
+</div>
+
+<div class="feature">
+  <div class="container">
+    <h4>Start your search here <i class="fa fa-hand-o-up" style="margin:0 3px;"></i></h4>
+    <h3 class="text-center"><span id="check">No</span> Results for: "{{books}}"</h3>
+    <div class="book_content">
+       <div ng-repeat="item in searchResult.items" id="book-item">
+           <a href="#/search/{{$index}}">
+                <img ng-src="{{item.volumeInfo.imageLinks['thumbnail']}}" alt="">
+                <h5>{{item.volumeInfo.title}}</h5>
+                <p>{{item.volumeInfo.categories[0]}}</p>
+           </a>
+       </div>
+    </div>
+  </div>
+</div> 
+

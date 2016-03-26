@@ -1,0 +1,23 @@
+<div class="topsell_detail">
+	 <a href= "#/" style="text-decoration:none; color:#000;"><h5 style="margin:0 10px; margin-bottom:15px;"><i class="fa fa-hand-o-left fa-2x" style="margin:5px;"></i>{{return}}</h5></a>
+	 <div class="container-fluid">
+	 	<div class="book_info">
+        <div class="content-left">
+           <img ng-src="{{detail_result.volumeInfo.imageLinks.thumbnail}}">
+           <h5>By {{detail_result.volumeInfo.authors[0]}}</h5>
+           <p>Genre:{{detail_result.volumeInfo.categories[0]}}</p>
+           <h6>Published: {{detail_result.volumeInfo.publishedDate}}</h6>
+           <p>{{detail_result.volumeInfo.industryIdentifiers[1]['type']}}: {{detail_result.volumeInfo.industryIdentifiers[1]['identifier']}}</p>
+           <p><a href="{{detail_result.volumeInfo.previewLink}}" target="_blank" id="link_prev">Preview Book</a></p>
+
+        </div>
+         <div class="content-right">
+              <div class="right_wrapper">
+                  <h3>{{detail_result.volumeInfo.title}}</h3><br/>
+                  <p>{{detail_result.volumeInfo.description}}</p><br/>
+                  <h4>Find more information about this ebook at google's <a href="{{detail_result.volumeInfo.infoLink}}" target="_blank">books website</a></h4>
+              </div>
+         </div>
+    </div>
+	 </div>
+</div>

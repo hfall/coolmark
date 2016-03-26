@@ -1,0 +1,191 @@
+*{
+  box-sizing:border-box;
+}
+body {
+ margin:0;
+ padding:0;
+ font-family: 'Roboto', sans-serif;
+ background: #f7f7f7;
+}
+.header {
+  background:#fff;
+}
+.header .container-fluid {
+    max-width: 970px;
+}
+.header ul li {
+    display: inline-block;
+}
+.header ul.pull-right a {
+  display:inline-block;
+  font-size:15px;
+  color: #000;
+    text-decoration: none;
+    margin:2px 5px;
+}
+.header p {
+    margin: 16px;
+    color: #000;
+}
+.header p #log-status {
+  color: #ff4f00;
+  
+}
+
+.header li#brandname a {
+  font-family: 'Montserrat', sans-serif;
+  color: #cc287e;
+  font-size:20px;
+  font-weight: bold;
+  position: relative;
+    text-decoration: none;
+  top: 13px;
+}
+
+ul.pull-right li {
+  margin-top: 13px;
+    margin-right: 3em;
+    font-size: 18px;
+  color: red;
+}
+
+/*main*/
+.content {
+  position:relative;
+  top:-61px;
+  height:500px;
+  background: #212226 url('img/reading_banner.jpg') no-repeat center center;
+  background-size:cover;
+  background-blend-mode: multiply;
+}
+#content_banner {
+    margin-top:61px;
+    max-height: 300px;
+}
+#content_banner > h1 {
+  margin-top:45px;
+  color: #fff;
+  font-size: 5vw;
+}
+
+/*extra feature*/
+.search_detail .container-fluid, .topsell_detail .container-fluid {
+    max-width: 970px;
+}
+.search_detail .book_info, .topsell_detail .book_info {
+    display: flex;
+    margin-bottom: 20px;
+}
+.search_detail .book_info .content-left, .topsell_detail .book_info .content-left {
+    width: 200px;
+/*    background:orange;*/
+    text-align: center;
+}
+.search_detail .book_info .content-left img {
+/*    margin:auto;*/
+}
+.search_detail .book_info .content-right, .topsell_detail .book_info .content-right{
+    width: 770px;
+    background:rgba(255, 255, 255, 0.4);
+    color: #000;
+}
+.search_detail .book_info .content_right .right_wrapper, .topsell_detail > h3, h4, p {
+  margin: 10px;
+}
+/*.search_detail .book_info .content_right .right_wrapper > h3, h4, p {
+  margin: 10px;
+}*/
+.search_detail #link_prev, .topsell_detail #link_prev {
+  background:orange;
+  color:#fff;
+  text-decoration: none;
+  padding:5px;
+  
+}
+/*home feature*/
+.feature {
+    padding:0 0 100px 0;
+  background:#fff;
+  color: #191919;
+}
+.feature h4:first-child {
+    text-align: center;
+    text-decoration: underline;
+}
+.feature .container {
+    margin-bottom: 8px;
+    max-width: 980px;
+    margin:0 auto;
+/*    text-align: center;*/
+}
+.feature .container .book_content {
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.feature .container .book_content #book-item {
+    width:190px;
+   padding:10px 15px;
+    text-align: center;
+    margin:5px 10px;
+    background:#fff;
+    color: black;
+}
+.feature .container .book_content #book-item:hover {
+    box-shadow: 2px 3px 3px #262626;
+    cursor: pointer;
+}
+.feature h4 {
+  position: relative;
+  top: 10px;
+}
+/*best sellers*/
+.best_sellers{
+  /*height:200px;*/
+  background:#f7f7f7;
+}
+.best_sellers h4 {
+  text-align: center;
+  color:;
+}
+.best_sellers .container-fluid {
+  margin:0 auto;
+}
+.bestsellers {
+  padding: 15px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.bestsellers #best-item {
+  width:180px;
+  padding: 0;
+  margin:0;
+}
+.bestsellers #best-item a {
+  text-decoration: none;
+}
+.bestsellers #best-item a> h5, p {
+  color:#000;
+  line-height: 1;
+}
+
+/*topsell*/
+.topsell_detail {
+  
+}
+
+/*myBook*/
+.footer {
+  padding:4px;
+  background:#333333;
+  color: #f7f7f7;
+}
+.footer .container {
+  margin:0 10px;
+}
+
+
+/*media queries*/
+
