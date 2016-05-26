@@ -17,12 +17,12 @@
   </div>
 </div>
 
-<div class="search" style="padding:5px; background: #cc287e;">
+<div class="search">
   <form ng-submit= "submit()">
     <div class="input-group input-group-lg">
       <input type="text" name="search" class="form-control" style="border-radius: 0;" placeholder="Find author/book/ISBN or any keyword here" ng-model="books" id="search_input">
       <span class="input-group-btn">
-        <input type="submit" class="form-control btn btn-default" value="Search" style="background: #f7f7f7; color: #000;border:none;border-left:4px solid #cc287e;">
+        <input type="submit" class="form-control btn btn-default" value="Search" style="background: #f7f7f7; color: #000;border:1px solid #cc287e;border-left:4px solid #cc287e;">
       </span>
     </div>
   </form>
@@ -30,8 +30,8 @@
 
 <div class="feature">
   <div class="container">
-    <h4>Start your search here <i class="fa fa-hand-o-up" style="margin:0 3px;"></i></h4>
-    <h3 class="text-center"><span id="check">No</span> Results for: "{{books}}"</h3>
+    <h4>Begin search here <i class="fa fa-hand-o-up" style="margin:0 3px;"></i></h4>
+    <h3 class="text-center"><span id="check">No Results for: "{{books}}"</span></h3>
     <div class="book_content">
        <div ng-repeat="item in searchResult.items" id="book-item">
            <a href="#/search/{{$index}}">

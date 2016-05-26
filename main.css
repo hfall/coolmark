@@ -37,8 +37,8 @@ body {
   
 }
 .header .brand_container {
-  height: 100px;
-  width: 100px;
+  height: 50px;
+  width: 50px;
   border: 1px solid #000;
   border-radius: 100%;
   display: flex;
@@ -67,7 +67,7 @@ ul.pull-right li {
   position:relative;
   top:-61px;
   height:500px;
-  background: #8e5271 url('img/reading_banner.jpg') no-repeat center center;
+  background: #4e2d3e url('img/reading_banner.jpeg') no-repeat center center;
   background-size:cover;
   background-blend-mode: multiply;
 }
@@ -81,7 +81,14 @@ ul.pull-right li {
   font-size: 4rem;
 }
 
+/* search input */
+div.search {
+  background: transparent;
+  max-width: 670px;
+  margin:0 auto;
+}
 /*extra feature*/
+
 .search_detail .container-fluid, .topsell_detail .container-fluid {
     max-width: 970px;
 }
@@ -160,7 +167,10 @@ ul.pull-right li {
 }
 .best_sellers h4 {
   text-align: center;
-  color:;
+  color: #191919;
+  margin:20px;
+  font-size: 25px;
+  font-weight: 300;
 }
 .best_sellers .container-fluid {
   max-width: 970px;
@@ -193,11 +203,12 @@ ul.pull-right li {
 /*myBook*/
 .footer {
   padding:4px;
-  background:#333333;
+  background:#191919;
   color: #f7f7f7;
 }
 .footer .container {
   margin:0 10px;
+  padding: 5px 0;
 }
 
 
