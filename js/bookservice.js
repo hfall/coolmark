@@ -15,6 +15,7 @@ app.factory('bestService', ['$http', function($http){
 		});
 }]);
 app.service('myService', function(){
+	// Setting default value of book as 'empty' in order to update it after typing a value in the search field.
    this.book= ""; 
 });
 

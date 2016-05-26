@@ -10,10 +10,10 @@ bestService.success(function(data){
 $scope.submit= function () {
     if($scope.books === ''){
         alert('Field is empty');
-        console.log($scope.books);
         return false;
     } 
     else {
+        // If search field is empty, render 'no'. Otherwise change to 'Your' when search is not empty 
         var valid= document.getElementById('check');
         valid.innerHTML= 'Your';
        console.log($scope.books); 

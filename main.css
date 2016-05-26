@@ -9,6 +9,11 @@ body {
 }
 .header {
   background:#fff;
+  padding:10px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*z-index: 9999;*/
 }
 .header .container-fluid {
     max-width: 970px;
@@ -31,15 +36,23 @@ body {
   color: #ff4f00;
   
 }
-
-.header li#brandname a {
+.header .brand_container {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #000;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header #brandname {
   font-family: 'Montserrat', sans-serif;
   color: #cc287e;
   font-size:20px;
   font-weight: bold;
   position: relative;
     text-decoration: none;
-  top: 13px;
+  /*top: 13px;*/
 }
 
 ul.pull-right li {
@@ -54,7 +67,7 @@ ul.pull-right li {
   position:relative;
   top:-61px;
   height:500px;
-  background: #212226 url('img/reading_banner.jpg') no-repeat center center;
+  background: #8e5271 url('img/reading_banner.jpg') no-repeat center center;
   background-size:cover;
   background-blend-mode: multiply;
 }
@@ -63,9 +76,9 @@ ul.pull-right li {
     max-height: 300px;
 }
 #content_banner > h1 {
-  margin-top:45px;
+  margin-top:3em;
   color: #fff;
-  font-size: 5vw;
+  font-size: 4rem;
 }
 
 /*extra feature*/
@@ -150,6 +163,7 @@ ul.pull-right li {
   color:;
 }
 .best_sellers .container-fluid {
+  max-width: 970px;
   margin:0 auto;
 }
 .bestsellers {
