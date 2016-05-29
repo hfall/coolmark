@@ -66,7 +66,7 @@ ul.pull-right li {
 .content {
   position:relative;
   top:-61px;
-  height:500px;
+  height:460px;
   background: #4e2d3e url('img/reading_banner.jpeg') no-repeat center center;
   background-size:cover;
   background-blend-mode: multiply;
@@ -76,9 +76,15 @@ ul.pull-right li {
     max-height: 300px;
 }
 #content_banner > h1 {
-  margin-top:3em;
+  margin-top:2em;
   color: #fff;
-  font-size: 4rem;
+  font-size: 3.5em;
+  font-weight: 300;
+}
+#content_banner h3 {
+  font-size: 3em;
+  font-weight: 100;
+  margin:0 45px;
 }
 
 /* search input */
@@ -125,7 +131,7 @@ div.search {
 /*home feature*/
 .feature {
     padding:0 0 100px 0;
-  background:#fff;
+  background:#7f7f7;
   color: #191919;
 }
 .feature h4:first-child {
